@@ -7,7 +7,8 @@
 /* This sub-section defines the unique
  * styles for the tab of each feed type
 */
-article[data-type="TextPost"]::before {
+article[data-type="TextPost"]::before,
+article[data-type="LinkPost"]::before {
     content: "INTERNAL";
     background-color: #FFF6D9;
     border: 1px solid #EFDAA3;
@@ -37,7 +38,8 @@ article[data-type="CallLogPost"]::before {
 
 /* This sub-section defines the common 
  * styles for the descriptive tab */
-article[data-type="TextPost"]::before, 
+article[data-type="TextPost"]::before,
+article[data-type="LinkPost"]::before, 
 article[data-type="EmailMessageEvent"]::before,
 article[data-type="MilestoneEvent"]::before,
 article[data-type="CallLogPost"]::before{
@@ -63,7 +65,8 @@ article[data-type="CallLogPost"]::before{
 /* This sub-section defines the unique 
  * styles for each feed type
 */
-article[data-type="TextPost"] {
+article[data-type="TextPost"],
+article[data-type="LinkPost"] {
     background-color: #FFF6D9;
     border-color: #EFDAA3 !important;
 }
@@ -87,6 +90,7 @@ article[data-type="CallLogPost"] {
 /* This sub-section defines the common 
  * styles for the feed articles */
 article[data-type="TextPost"],
+article[data-type="LinkPost"],
 article[data-type="EmailMessageEvent"],
 article[data-type="MilestoneEvent"],
 article[data-type="CallLogPost"]{
