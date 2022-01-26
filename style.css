@@ -8,14 +8,16 @@
  * styles for the tab of each feed type
 */
 article[data-type="TextPost"]::before,
-article[data-type="LinkPost"]::before {
+article[data-type="LinkPost"]::before,
+article[data-type="ContentPost"]::before {
     content: "INTERNAL";
     background-color: #FFF6D9;
     border: 1px solid #EFDAA3;
     color: goldenrod;
 }
 
-article[data-type="EmailMessageEvent"]::before {
+article[data-type="EmailMessageEvent"]::before,
+article[data-type="CaseCommentPost"]::before {
     content: "PUBLIC";
     background-color: #dfeffc;
     border: 1px solid #a3e1ef;
@@ -39,8 +41,10 @@ article[data-type="CallLogPost"]::before {
 /* This sub-section defines the common 
  * styles for the descriptive tab */
 article[data-type="TextPost"]::before,
-article[data-type="LinkPost"]::before, 
+article[data-type="LinkPost"]::before,
+article[data-type="ContentPost"]::before, 
 article[data-type="EmailMessageEvent"]::before,
+article[data-type="ContentPost"]::before,
 article[data-type="MilestoneEvent"]::before,
 article[data-type="CallLogPost"]::before{
     border-bottom-width: 0px;
@@ -66,12 +70,14 @@ article[data-type="CallLogPost"]::before{
  * styles for each feed type
 */
 article[data-type="TextPost"],
-article[data-type="LinkPost"] {
+article[data-type="LinkPost"],
+article[data-type="ContentPost"] {
     background-color: #FFF6D9;
     border-color: #EFDAA3 !important;
 }
 
-article[data-type="EmailMessageEvent"] {
+article[data-type="EmailMessageEvent"],
+article[data-type="ContentPost"] {
     background-color: #dfeffc;
     border-color: #a3e1ef;
 }
@@ -91,7 +97,9 @@ article[data-type="CallLogPost"] {
  * styles for the feed articles */
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
+article[data-type="ContentPost"],
 article[data-type="EmailMessageEvent"],
+article[data-type="ContentPost"],
 article[data-type="MilestoneEvent"],
 article[data-type="CallLogPost"]{
     border-style: solid;
