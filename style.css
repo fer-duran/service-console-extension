@@ -108,3 +108,14 @@ article[data-type="CallLogPost"]{
     margin-bottom: 26px;
     border-radius: 3px;
 }
+
+/* Remove weird background images */
+.slds-brand-band:after {
+  background-image: none !important;
+}
+.slds-brand-band:before {
+  background-image: none !important;
+}
+.windowViewMode-maximized.active.lafPageHost {
+  background-color:#c8dbee !important;
+}
